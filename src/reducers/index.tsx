@@ -1,10 +1,11 @@
 import { EnthusiasmAction } from '../actions';
 import { StoreState } from '../types';
+import { Reducer } from 'redux';
 import { INCREMENT_ENTHUSIASM, DECREMENT_ENTHUSIASM } from '../constants/index';
-export function enthusiam(
+export const enthusiasm: Reducer = (
   state: StoreState,
   action: EnthusiasmAction,
-): StoreState {
+): StoreState => {
   switch (action.type) {
     case INCREMENT_ENTHUSIASM:
       return { ...state, enthusiasmLevel: state.enthusiasmLevel + 1 };
@@ -16,4 +17,4 @@ export function enthusiam(
     default:
       return state;
   }
-}
+};

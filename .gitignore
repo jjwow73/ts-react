@@ -23,3 +23,26 @@ MS_starter/.env.production.local
 MS_starter/npm-debug.log*
 MS_starter/yarn-debug.log*
 MS_starter/yarn-error.log*
+
+
+# gitignores for todolist project 
+todolist/node_modules
+todolist/.pnp
+todolist/.pnp.js
+
+# testing
+todolist/coverage
+
+# production
+todolist/build
+
+# misc
+todolist/.DS_Store
+todolist/.env.local
+todolist/.env.development.local
+todolist/.env.test.local
+todolist/.env.production.local
+
+todolist/npm-debug.log*
+todolist/yarn-debug.log*
+todolist/yarn-error.log*
